@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.APPLICATION_OCTET_STREAM = 'application/octet-stream';
+exports.APPLICATION_JSON = 'application/json';
+exports.AUDIO_AAC = 'audio/aac';
+exports.AUDIO_MP3 = 'audio/mp3';
+exports.IMAGE_GIF = 'image/gif';
+exports.IMAGE_JPEG = 'image/jpeg';
+exports.VIDEO_MP4 = 'video/mp4';
+exports.VIDEO_QUICKTIME = 'video/quicktime';
+exports.isJPEG = (value) => value === 'image/jpeg';
+exports.isImage = (value) => value.startsWith('image/');
+exports.isVideo = (value) => value.startsWith('video/');
+exports.isAudio = (value) => value.startsWith('audio/');
