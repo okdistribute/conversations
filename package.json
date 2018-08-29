@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "tslint --format stylish --project .",
     "test": "mocha --recursive ts/test",
-    "build": "tsc",
+    "build": "npm run build-ts && npm run build-css",
+    "build-ts": "tsc",
+    "build-css": "node-sass stylesheets/manifest.scss build/manifest.css",
     "clean": "rimraf ts/**/*.js ts/*.js"
   },
   "dependencies": {
@@ -20,10 +22,12 @@
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "react": "^16.2.0",
-    "react-contextmenu": "^2.9.3",
+    "react-contextmenu": "2.9.2",
+    "react-dom": "^16.2.0",
     "semver": "^5.5.1"
   },
   "devDependencies": {
+    "node-sass": "^4.9.3",
     "@types/chai": "^4.1.2",
     "@types/classnames": "^2.2.3",
     "@types/filesize": "^3.6.0",
@@ -42,6 +46,7 @@
     "mocha": "^5.2.0",
     "mocha-testcheck": "^1.0.0-rc.0",
     "react-docgen-typescript": "^1.2.6",
+    "react-styleguidist": "^7.0.1",
     "ts-loader": "^4.1.0",
     "tslint": "^5.9.1",
     "tslint-microsoft-contrib": "^5.2.1",
