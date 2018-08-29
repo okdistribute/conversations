@@ -15,7 +15,7 @@ install `intl-tel-input` and `emoji-panel` to get full css compatbility with
 the components. 
 
 ```js
-var ConversationListItem = require('conversations/build/components/ConversationListItem')
+var {ConversationListItem} = require('conversations')
 ```
 
 See `docs` for more info on available components.
