@@ -1,5 +1,6 @@
-var ConversationListItem = require('./build/components/ConversationListItem').ConversationListItem
+const { ConversationListItem } = require('./build/components/ConversationListItem')
 
 module.exports = {
   ConversationListItem
 }
+
