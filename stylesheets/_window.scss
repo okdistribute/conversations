@@ -1,3 +1,9 @@
+.window {
+  display: flex;
+  flex-direction: row;
+  min-width: 560px;
+  height: 100%;
+}
 
 .window__main {
   flex-grow: 1;
