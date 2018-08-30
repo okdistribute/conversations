@@ -1044,62 +1044,6 @@ button.emoji {
   background-color: red;
   color: white; }
 
-.composerContainer {
-  margin: 0 1rem 1rem 1rem;
-  cursor: text; }
-
-.composer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  transition: all 0.1s ease-in-out;
-  padding: .5rem 0;
-  min-height: 48px; }
-  .composer:hover {
-    border-color: rgba(0, 0, 0, 0.5); }
-  .composer .composer__meta {
-    display: table-cell;
-    width: 2.25rem;
-    vertical-align: middle;
-    border-right: 2px solid rgba(0, 0, 0, 0.25);
-    text-align: center;
-    cursor: pointer; }
-  .composer .composer__input {
-    width: 100%;
-    padding: 0 1rem;
-    width: 100%;
-    display: flex;
-    align-content: center; }
-  .composer .composer__input textarea {
-    border: 0;
-    display: block;
-    width: 100%;
-    vertical-align: middle;
-    font-size: 0.875rem;
-    outline: none;
-    max-height: 200px; }
-  .composer .composer__input input {
-    border: 0;
-    display: block;
-    width: 100%;
-    vertical-align: middle;
-    font-size: 0.875rem;
-    outline: none; }
-  .composer .composer__other {
-    align-self: flex-end;
-    display: table-cell;
-    width: 3rem;
-    height: 1.5rem;
-    vertical-align: middle;
-    text-align: center;
-    cursor: pointer;
-    transform: scale(1); }
-  .composer .composer__other:hover {
-    transform: scale(1.02); }
-
 .window {
   display: flex;
   flex-direction: column;

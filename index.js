@@ -22,7 +22,7 @@ const { SafetyNumberNotification } = require('./build/components/conversation/Sa
 const { TimerNotification } = require('./build/components/conversation/TimerNotification')
 const { Timestamp } = require('./build/components/conversation/Timestamp')
 const { VerificationNotification } = require('./build/components/conversation/VerificationNotification')
-const {ConversationContext} = require('./build/styleguide/ConversationContext')
+const { ConversationContext } = require('./build/styleguide/ConversationContext')
 
 module.exports = {
   ConversationListItem,
