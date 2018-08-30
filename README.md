@@ -1,6 +1,6 @@
 # Conversations 
 
-UI components for rendering conversations. 
+React UI components for rendering conversations. 
 
 Originally created by Signal Desktop. 
 
@@ -16,6 +16,7 @@ the components.
 
 ```js
 var {ConversationListItem} = require('conversations')
+var {MessageBody, MessageDetail} = require('conversations').conversation
 ```
 
 See `docs` for more info on available components.
