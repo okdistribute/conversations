@@ -1044,17 +1044,6 @@ button.emoji {
   background-color: red;
   color: white; }
 
-.window {
-  display: flex;
-  flex-direction: column;
-  min-width: 560px;
-  height: 100%; }
-
-.window__main {
-  flex-grow: 1;
-  overflow-x: hidden;
-  overflow-y: auto; }
-
 .conversation-stack,
 .new-conversation,
 .inbox,
@@ -1268,11 +1257,9 @@ input.search {
 
 .conversation {
   background-color: #ffffff;
-  height: 100%;
   position: relative; }
   .conversation .panel,
   .conversation .panel-wrapper {
-    height: calc(100% - 48px);
     overflow-y: scroll; }
   .conversation .panel .container {
     padding-top: 20px;
@@ -1295,7 +1282,6 @@ input.search {
       -webkit-padding-start: 0px;
       position: absolute;
       top: 0;
-      height: 100%;
       width: 100%;
       margin: 0;
       padding: 10px 0 0 0;
