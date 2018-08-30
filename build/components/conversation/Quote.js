@@ -23,8 +23,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var classnames_1 = __importDefault(require("classnames"));
-var MIME = __importStar(require("../../../ts/types/MIME"));
-var GoogleChrome = __importStar(require("../../../ts/util/GoogleChrome"));
+var MIME = __importStar(require("../../types/MIME"));
+var GoogleChrome = __importStar(require("../../util/GoogleChrome"));
 var MessageBody_1 = require("./MessageBody");
 var ContactName_1 = require("./ContactName");
 function validateQuote(quote) {

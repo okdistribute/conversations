@@ -3,8 +3,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import * as MIME from '../../../ts/types/MIME';
-import * as GoogleChrome from '../../../ts/util/GoogleChrome';
+import * as MIME from '../../types/MIME';
+import * as GoogleChrome from '../../util/GoogleChrome';
 
 import { MessageBody } from './MessageBody';
 import { Color, Localizer } from '../../types/Util';

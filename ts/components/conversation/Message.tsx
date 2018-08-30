@@ -17,7 +17,7 @@ import { Contact } from '../../types/Contact';
 import { Color, Localizer } from '../../types/Util';
 import { ContextMenu, ContextMenuTrigger, MenuItem } from 'react-contextmenu';
 
-import * as MIME from '../../../ts/types/MIME';
+import * as MIME from '../../types/MIME';
 
 interface Trigger {
   handleContextClick: (event: React.MouseEvent<HTMLDivElement>) => void;

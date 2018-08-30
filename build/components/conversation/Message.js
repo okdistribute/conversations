@@ -30,7 +30,7 @@ var ContactName_1 = require("./ContactName");
 var Quote_1 = require("./Quote");
 var EmbeddedContact_1 = require("./EmbeddedContact");
 var react_contextmenu_1 = require("react-contextmenu");
-var MIME = __importStar(require("../../../ts/types/MIME"));
+var MIME = __importStar(require("../../types/MIME"));
 function isImage(attachment) {
     return (attachment &&
         attachment.contentType &&

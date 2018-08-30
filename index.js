@@ -1,7 +1,7 @@
 const { ConversationListItem } = require('./build/components/ConversationListItem')
 const { ContactListItem } = require('./build/components/ContactListItem')
-const { LightBox } = require('./build/components/LightBox')
-const { LightBoxGallery } = require('./build/components/LightBoxGallery')
+const { LightBox } = require('./build/components/Lightbox')
+const { LightBoxGallery } = require('./build/components/LightboxGallery')
 const { Intl } = require('./build/components/Intl')
 
 const { AddNewLines } = require('./build/components/conversation/AddNewLines')
@@ -22,6 +22,7 @@ const { SafetyNumberNotification } = require('./build/components/conversation/Sa
 const { TimerNotification } = require('./build/components/conversation/TimerNotification')
 const { Timestamp } = require('./build/components/conversation/Timestamp')
 const { VerificationNotification } = require('./build/components/conversation/VerificationNotification')
+const {ConversationContext} = require('./build/styleguide/ConversationContext')
 
 module.exports = {
   ConversationListItem,
@@ -48,5 +49,8 @@ module.exports = {
     TimerNotification,
     Timestamp,
     VerificationNotification
+  },
+  styleguide: {
+    ConversationContext
   }
 }
