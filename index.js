@@ -1,7 +1,7 @@
 const { ConversationListItem } = require('./build/components/ConversationListItem')
 const { ContactListItem } = require('./build/components/ContactListItem')
-const { LightBox } = require('./build/components/Lightbox')
-const { LightBoxGallery } = require('./build/components/LightboxGallery')
+const { Lightbox } = require('./build/components/Lightbox')
+const { LightboxGallery } = require('./build/components/LightboxGallery')
 const { Intl } = require('./build/components/Intl')
 
 const { AddNewLines } = require('./build/components/conversation/AddNewLines')
@@ -27,30 +27,26 @@ const { ConversationContext } = require('./build/styleguide/ConversationContext'
 module.exports = {
   ConversationListItem,
   ContactListItem,
-  LightBox,
-  LightBoxGallery,
+  Lightbox,
+  LightboxGallery,
   Intl,
-  conversation: {
-    AddNewLines,
-    ContactDetail,
-    ContactName,
-    ConversationHeader,
-    EmbeddedContact,
-    Emojify,
-    ExpireTimer,
-    GroupNotification,
-    Linkify,
-    Message,
-    MessageBody,
-    MessageDetail,
-    Quote,
-    ResetSessionNotification,
-    SafetyNumberNotification,
-    TimerNotification,
-    Timestamp,
-    VerificationNotification
-  },
-  styleguide: {
-    ConversationContext
-  }
+  AddNewLines,
+  ContactDetail,
+  ContactName,
+  ConversationHeader,
+  EmbeddedContact,
+  Emojify,
+  ExpireTimer,
+  GroupNotification,
+  Linkify,
+  Message,
+  MessageBody,
+  MessageDetail,
+  Quote,
+  ResetSessionNotification,
+  SafetyNumberNotification,
+  TimerNotification,
+  Timestamp,
+  VerificationNotification,
+  ConversationContext
 }
