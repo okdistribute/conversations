@@ -1,5 +1,5 @@
 // @ts-ignore
-import EmojiConvertor from 'emoji-js';
+import EmojiConvertor from 'emoji-js-clean';
 
 const instance = new EmojiConvertor();
 instance.init_unified();

@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 // @ts-ignore
-var emoji_js_1 = __importDefault(require("emoji-js"));
-var instance = new emoji_js_1.default();
+var emoji_js_clean_1 = __importDefault(require("emoji-js-clean"));
+var instance = new emoji_js_clean_1.default();
 instance.init_unified();
 instance.init_colons();
 instance.img_sets.apple.path =
