@@ -85,6 +85,7 @@ export interface Props {
   expirationTimestamp?: number;
   onClickAttachment?: () => void;
   onReply?: () => void;
+  onForward?: () => void;
   onRetrySend?: () => void;
   onDownload?: () => void;
   onDelete?: () => void;
@@ -806,6 +807,7 @@ export class Message extends React.Component<Props, State> {
       onDelete,
       onDownload,
       onReply,
+      onForward,
       onRetrySend,
       onShowDetail,
       i18n,
@@ -832,6 +834,14 @@ export class Message extends React.Component<Props, State> {
           onClick={onReply}
         >
           {i18n('replyToMessage')}
+        </MenuItem>
+        <MenuItem
+          attributes={{
+            className: 'module-message__context__forward',
+          }}
+          onClick={onForward}
+        >
+          {i18n('forwardMessage')}
         </MenuItem>
         <MenuItem
           attributes={{

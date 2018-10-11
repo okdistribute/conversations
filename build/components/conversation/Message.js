@@ -329,7 +329,7 @@ var Message = /** @class */ (function (_super) {
             last));
     };
     Message.prototype.renderContextMenu = function (triggerId) {
-        var _a = this.props, attachment = _a.attachment, direction = _a.direction, status = _a.status, onDelete = _a.onDelete, onDownload = _a.onDownload, onReply = _a.onReply, onRetrySend = _a.onRetrySend, onShowDetail = _a.onShowDetail, i18n = _a.i18n;
+        var _a = this.props, attachment = _a.attachment, direction = _a.direction, status = _a.status, onDelete = _a.onDelete, onDownload = _a.onDownload, onReply = _a.onReply, onForward = _a.onForward, onRetrySend = _a.onRetrySend, onShowDetail = _a.onShowDetail, i18n = _a.i18n;
         var showRetry = status === 'error' && direction === 'outgoing';
         return (react_1.default.createElement(react_contextmenu_1.ContextMenu, { id: triggerId },
             attachment ? (react_1.default.createElement(react_contextmenu_1.MenuItem, { attributes: {
@@ -338,6 +338,9 @@ var Message = /** @class */ (function (_super) {
             react_1.default.createElement(react_contextmenu_1.MenuItem, { attributes: {
                     className: 'module-message__context__reply',
                 }, onClick: onReply }, i18n('replyToMessage')),
+            react_1.default.createElement(react_contextmenu_1.MenuItem, { attributes: {
+                    className: 'module-message__context__forward',
+                }, onClick: onForward }, i18n('forwardMessage')),
             react_1.default.createElement(react_contextmenu_1.MenuItem, { attributes: {
                     className: 'module-message__context__more-info',
                 }, onClick: onShowDetail }, i18n('moreInfo')),
